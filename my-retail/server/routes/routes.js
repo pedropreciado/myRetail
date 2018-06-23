@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
   res.render('index');
 });
 
-router.get('products', (req, res) => {
+router.get('/products', (req, res) => {
   res.send(items);
 });
 
