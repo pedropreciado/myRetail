@@ -17,8 +17,8 @@ export default class ProductShow extends React.Component {
     let { PrimaryImage, AlternateImages } = this.props.product.Images[0];
     let images = AlternateImages
                   .map((imgObj) => imgObj.image)
-    images.push(PrimaryImage[0].image)
-    
+    images.push(PrimaryImage[0].image);
+
     return (
       <ProductImages 
       primaryImageIdx={images.length - 1}
@@ -32,17 +32,15 @@ export default class ProductShow extends React.Component {
     
     return (
       <div className='product-show'>
-        <div className='product-name'>
-        { title }
-        </div>
-        <div className='product-images'>
+        <div className='show-component product-name'>{ title }</div>
+        <div className='show-component product-images'>
           { this.renderImages() }
         </div>
-        <div className='product-reviews-container'>
+        <div className='show-component product-reviews-container'>
         </div>
-        <div className='product-cart-container'>
+        <div className='show-component product-cart-container'>
         </div>
-        <div className='product-details-container'>
+        <div className='show-component product-details-container'>
         </div>
       </div>
     );

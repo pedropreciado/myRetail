@@ -9,18 +9,25 @@ export default class ProductImages extends React.Component {
     this.state = {
       currentImageIdx: primaryImageIdx,
     };
+
+    this.changeImage = this.changeImage.bind(this);
   }
 
+  changeImage(currentImageIdx) {
+    this.setState({ currentImageIdx });
+  }
+  
   render() {
     let { images } = this.props;
     let { currentImageIdx } = this.state;
-    console.log(images)
+    
     return (
-      <div>
-        <img src={images[currentImageIdx]}/>
+      <div className='product-image-container'>
+        <img id='primary-image' src={images[currentImageIdx]}/>
         <ProductImageSlide 
         images={images}
         currentImageIdx={currentImageIdx}
+        changeImage={this.changeImage}
         />          
       </div>
     );

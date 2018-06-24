@@ -8,6 +8,9 @@ html, body, #root {
   flex-wrap: wrap;
   height: 97%;
 }
+#primary-image {
+  margin: 10px;
+}
 .product-index-item {
   background-color: bisque;
   width: 200px;
@@ -22,7 +25,39 @@ html, body, #root {
 }
 .product-show {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px;
+}
+.show-component {
+  width: 40%;
 }
 .product-show-title {
   font-weight: 100;
+}
+.product-name {
+  font-size: 1.5em;
+  font-weight: 100;
+  text-align: center;
+}
+.product-image-container {
+  display: flex;
+  flex-direction: column;
+}
+.product-image-slide-container {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+}
+.slide-image {
+  width: 70px;
+  height: 70px;
+}
+.current {
+    border: .5px solid grey;
+    padding: 2px;
+    border-radius: 5px;
 }
