@@ -1,5 +1,6 @@
 html, body, #root {
   height: 100%;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
 }
 #product-index {
@@ -47,7 +48,9 @@ html, body, #root {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  padding: 40px;
+  height: 100%;
+  padding: 25px;
+  padding-bottom: 0;
 }
 .show-component {
   min-width: 40%;
@@ -82,9 +85,9 @@ html, body, #root {
   transition: .2s;
 }
 .current {
-    border: .5px solid grey;
-    padding: 2px;
-    border-radius: 5px;
+  border: .5px solid grey;
+  padding: 2px;
+  border-radius: 5px;
 }
 .image-slide-arrow {
   display: flex;
@@ -96,10 +99,38 @@ html, body, #root {
   cursor: pointer; 
   transition: .7s;
 }
-#rating-header {
+#ratings-header {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
   font-size: .75em;
+  font-weight: bolder;
+}
+#pro-con-outer-container {
+  display: flex;
+  flex-flow: row;
+  background-color: #fcfcfc;
+}
+.pro-con-inner-container {
+  padding: 10px;
+  width: 90%;
+  height: 100%;
+}
+.pro-con-header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: .25px solid #efefef;
+}
+.pro-con-header > a {
+  font-size: .5em;
+  color: grey;
+}
+.pro-con-review {
+  font-size: .75em;
+}
+.pro-con-body-header {
+  display: flex;
+  flex-flow: column;
   font-weight: bolder;
 }

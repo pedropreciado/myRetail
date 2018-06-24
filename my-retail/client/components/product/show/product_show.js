@@ -38,7 +38,7 @@ export default class ProductShow extends React.Component {
 
     return (
       <ProductReviews 
-      pro={Pro} con={Con} 
+      pro={Pro[0]} con={Con[0]} 
       rating={consolidatedOverallRating} 
       reviews={Reviews} 
       />
