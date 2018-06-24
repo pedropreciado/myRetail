@@ -15,11 +15,14 @@ export default class ProductShow extends React.Component {
 
   renderImages() { 
     let { PrimaryImage, AlternateImages } = this.props.product.Images[0];
+    let images = AlternateImages
+                  .map((imgObj) => imgObj.image)
+    images.push(PrimaryImage[0].image)
     
     return (
       <ProductImages 
-      primaryImage={PrimaryImage[0].image}
-      alternateImages={AlternateImages.map((imgObj) => imgObj.image)}
+      primaryImageIdx={images.length - 1}
+        images={images}
       />
     );
   }
