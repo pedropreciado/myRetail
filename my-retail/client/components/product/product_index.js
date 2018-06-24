@@ -18,8 +18,8 @@ export default class ProductIndex extends React.Component {
       <div id='product-index'>
       
       {
-        products.map((product) => {
-          return (<ProductShow product={product} />);
+        products.map((product, idx) => {
+          return (<ProductShow key={idx} product={product} />);
         })
       }  
       </div>

@@ -33,7 +33,7 @@ export default class ProductImages extends React.Component {
     
     return (
       <div className='product-image-container'>
-        <img id='primary-image' src={images[currentImageIdx]}/>
+        <img onClick={this.toggleModal} id='primary-image' src={images[currentImageIdx]}/>
         
         <a onClick={this.toggleModal} id='zoom-image'><FaSearchPlus />view larger</a>
         

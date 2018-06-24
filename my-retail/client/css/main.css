@@ -1,6 +1,6 @@
 html, body, #root {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 #product-index {
   display: flex;
@@ -13,6 +13,7 @@ html, body, #root {
   min-width: 30%;
   max-width: 50%;
 }
+#primary-image { cursor: pointer; }
 #in-modal {
   height: 100%;
   position: absolute;
@@ -22,13 +23,13 @@ html, body, #root {
   bottom: 0;
   margin: auto auto;
 }
-#in-modal:hover { cursor: pointer };
+#in-modal:hover { cursor: pointer; }
 #zoom-image {
   margin-top: 10px;
   margin-bottom: 10px;
   color: grey;
 }
-#zoom-image:hover { cursor: pointer }
+#zoom-image:hover { cursor: pointer; }
 .product-index-item {
   background-color: bisque;
   width: 200px;
@@ -51,6 +52,8 @@ html, body, #root {
 .show-component {
   min-width: 40%;
   max-width: 40%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .product-show-title {
   font-weight: 100;
@@ -93,4 +96,10 @@ html, body, #root {
   cursor: pointer; 
   transition: .7s;
 }
-
+#rating-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: .75em;
+  font-weight: bolder;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductImages from './product_images';
+import ProductReviews from './product_reviews';
 
 export default class ProductShow extends React.Component {
   constructor(props) {
@@ -11,12 +12,12 @@ export default class ProductShow extends React.Component {
     };
 
     this.renderImages = this.renderImages.bind(this);
+    this.renderReviews = this.renderReviews.bind(this);
   }
 
   renderImages() { 
     let { PrimaryImage, AlternateImages } = this.props.product.Images[0];
-    let images = AlternateImages
-                  .map((imgObj) => imgObj.image)
+    let images = AlternateImages.map((imgObj) => imgObj.image);
     images.push(PrimaryImage[0].image);
 
     return (
@@ -27,6 +28,23 @@ export default class ProductShow extends React.Component {
     );
   }
   
+  renderReviews() {
+    let { 
+      consolidatedOverallRating,
+      Reviews,
+      Pro,
+      Con
+    } = this.props.product.CustomerReview[0];
+
+    return (
+      <ProductReviews 
+      pro={Pro} con={Con} 
+      rating={consolidatedOverallRating} 
+      reviews={Reviews} 
+      />
+    );
+  }
+
   render() {
     let { product: { title } } = this.props;
     
@@ -37,6 +55,7 @@ export default class ProductShow extends React.Component {
           { this.renderImages() }
         </div>
         <div className='show-component product-reviews-container'>
+          { this.renderReviews() }
         </div>
         <div className='show-component product-cart-container'>
         </div>
