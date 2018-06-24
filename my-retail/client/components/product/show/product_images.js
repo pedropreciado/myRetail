@@ -46,8 +46,13 @@ export default class ProductImages extends React.Component {
         isOpen={modalIsOpen}
         onRequestClose={this.toggleModal}
         contentLabel={itemTitle}
-        >
-          <img id='in-modal' src={images[currentImageIdx]} />
+        ariaHideApp={false}
+        > 
+          <img 
+          onClick={this.toggleModal} 
+          id='in-modal' 
+          src={images[currentImageIdx]} 
+          />
         </Modal>
       </div>
     );
