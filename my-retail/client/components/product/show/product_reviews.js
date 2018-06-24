@@ -41,7 +41,7 @@ export default class extends React.Component {
           numberOfStars={5} name='rating'
           starDimension='10px' starSpacing='2.5px'
           />
-          <a className='pro-con-title'>{ title }</a>
+          <a>{ title }</a>
           </div>
           <p className='pro-con-review'>{ review }</p>
           <a className='pro-con-review author'>

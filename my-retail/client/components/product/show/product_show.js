@@ -49,7 +49,8 @@ export default class ProductShow extends React.Component {
     let { product: { title } } = this.props;
     
     return (
-      <div className='product-show'>
+      <div>
+      <div id='product-show-left'>
         <div className='show-component product-name'>{ title }</div>
         <div className='show-component product-images'>
           { this.renderImages() }
@@ -57,10 +58,14 @@ export default class ProductShow extends React.Component {
         <div className='show-component product-reviews-container'>
           { this.renderReviews() }
         </div>
+      </div>
+
+      <div>
         <div className='show-component product-cart-container'>
         </div>
         <div className='show-component product-details-container'>
         </div>
+      </div>
       </div>
     );
   }
