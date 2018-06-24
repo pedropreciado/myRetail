@@ -10,6 +10,8 @@ html, body, #root {
 }
 #primary-image {
   margin: 10px;
+  min-width: 30%;
+  max-width: 50%;
 }
 .product-index-item {
   background-color: bisque;
@@ -32,6 +34,7 @@ html, body, #root {
 }
 .show-component {
   width: 40%;
+  min-width: 50%;
 }
 .product-show-title {
   font-weight: 100;
@@ -44,6 +47,8 @@ html, body, #root {
 .product-image-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .product-image-slide-container {
   display: flex;
@@ -60,4 +65,9 @@ html, body, #root {
     border: .5px solid grey;
     padding: 2px;
     border-radius: 5px;
+}
+.image-slide-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

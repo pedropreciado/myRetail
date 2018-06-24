@@ -18,6 +18,7 @@ export default class ProductImageSlide extends React.Component {
     };
 
     this.handleImageClick = this.handleImageClick.bind(this);
+    this.handleArrowClick = this.handleArrowClick.bind(this);
   }
 
   handleImageClick(midIdx) {
@@ -28,14 +29,28 @@ export default class ProductImageSlide extends React.Component {
 
     this.setState({ leftIdx, midIdx, rightIdx });
   }
+
+  handleArrowClick(direction) {
+    let shift = (shiftIdx) => {
+      let midIdx = (this.state.midIdx + shiftIdx) % this.props.images.length;
+
+      this.handleImageClick(midIdx);
+    };
+
+    shift(direction === 'left' ? -1 : 1);
+  }
   
   render() {
     let { images } = this.props;
     let { leftIdx, midIdx, rightIdx } = this.state;
 
     return (
-      <div className='product-image-slide-container'>
-        <div className='slide-image image-slide-arrow'><FaChevronLeft /></div>
+      <div className='product-image-slide-container'>        
+        <div 
+        className='slide-image image-slide-arrow'
+        onClick={() => this.handleArrowClick('left')}    
+        ><FaChevronLeft /></div>
+
 
         <img className='slide-image' 
         onClick={() => this.handleImageClick(leftIdx)} 
@@ -47,7 +62,10 @@ export default class ProductImageSlide extends React.Component {
         src={images[rightIdx]} 
         />
 
-        <div className='slide-image image-slide-arrow'><FaChevronRight /></div>
+        <div 
+        className='slide-image image-slide-arrow'
+        onClick={() => this.handleArrowClick('right')}
+        ><FaChevronRight /></div>
       </div>
     );
   }
