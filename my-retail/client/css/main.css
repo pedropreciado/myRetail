@@ -13,6 +13,11 @@ html, body, #root {
   min-width: 30%;
   max-width: 50%;
 }
+#zoom-image {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: grey;
+}
 .product-index-item {
   background-color: bisque;
   width: 200px;
@@ -33,8 +38,8 @@ html, body, #root {
   padding: 40px;
 }
 .show-component {
-  width: 40%;
-  min-width: 50%;
+  min-width: 40%;
+  max-width: 40%;
 }
 .product-show-title {
   font-weight: 100;
@@ -53,13 +58,14 @@ html, body, #root {
 .product-image-slide-container {
   display: flex;
   flex-flow: row;
-  width: 100%;
+  width: 75%;
   justify-content: space-between;
   align-content: center;
 }
 .slide-image {
   width: 70px;
   height: 70px;
+  transition: .2s;
 }
 .current {
     border: .5px solid grey;
@@ -70,4 +76,9 @@ html, body, #root {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.image-slide-arrow:hover, .slide-image:hover { 
+  opacity: .5;
+  cursor: pointer; 
+  transition: .7s;
 }
