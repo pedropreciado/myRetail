@@ -6,7 +6,8 @@ const ProductReducer = (oldState = {}, action) => {
   switch (action.type) {
     case RECEIVE_ALL_PRODUCTS:
       let { products } = action;
-      return Object.assign({}, oldState, { products });
+      
+      return Object.assign({}, oldState, products);
     default: 
       return oldState;  
   }

@@ -4,14 +4,12 @@ export default class ProductShow extends React.Component {
   constructor(props) {
     super(props);
   } 
-
-  componentDidMount() {
-    
-  }
   
   render() {
+    let { product: { title } } = this.props;
+    
     return (
-      <h1>Butt</h1>
+      <h1>{ title }</h1>
     );
   }
 }

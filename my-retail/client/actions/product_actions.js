@@ -5,8 +5,11 @@ export const RECEIVE_ALL_PRODUCTS = 'RECEIVE_ALL_PRODUCTS';
 export const fetchProducts = () => dispatch => {
   ProductAPIUtil
     .fetchProducts()
-    .then(({ data }) => {
-      dispatch(receiveAllProducts(data));
+    .then((res) => {
+      return res.json();
+    })
+    .then(({ CatalogEntryView }) => {
+      dispatch(receiveAllProducts(CatalogEntryView));
     })
     .catch((err) => {
       console.log(err);
