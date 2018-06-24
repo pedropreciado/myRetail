@@ -1,5 +1,6 @@
 import React from 'react';
-import ProductShow from './product_show';
+// import ProductIndexItem from './product_index_item';
+import ProductShow from './show/product_show';
 
 export default class ProductIndex extends React.Component {
   constructor(props) {
@@ -14,10 +15,10 @@ export default class ProductIndex extends React.Component {
     let { products } = this.props;    
     
     return (
-      <div>
+      <div id='product-index'>
+      
       {
         products.map((product) => {
-          console.log('pro:', product)
           return (<ProductShow product={product} />);
         })
       }  

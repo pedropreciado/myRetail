@@ -1,0 +1,28 @@
+html, body, #root {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+#product-index {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 97%;
+}
+.product-index-item {
+  background-color: bisque;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  transition: .2s;
+}
+.product-index-item:hover {
+  opacity: .7;
+  cursor: pointer;
+  transition: .5s;
+}
+.product-show {
+  display: flex;
+}
+.product-show-title {
+  font-weight: 100;
+}
