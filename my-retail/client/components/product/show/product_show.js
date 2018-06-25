@@ -25,7 +25,9 @@ export default class ProductShow extends React.Component {
       purchasingChannelCode
     } = this.props.product;
 
-    let promotions = Promotions.map(promo => promo.Description[0].shortDescription),
+    let promotions = Promotions.map(promo => 
+        promo.Description[0].shortDescription
+      ),
         offers = { 
           price: Offers[0].OfferPrice[0].formattedPriceValue,
           qualifier: Offers[0].OfferPrice[0].priceQualifier,
@@ -38,8 +40,6 @@ export default class ProductShow extends React.Component {
       code={purchasingChannelCode}
       />
     );
-
-
   }
 
   renderImages() { 

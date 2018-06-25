@@ -52,19 +52,17 @@ html, body, #root {
 }
 .show-component {
   min-width: 40%;
-  max-width: 40%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.product-show-split { max-width: 100%; }
-.product-show-title {
-  font-weight: 100;
-}
+.product-show-split { min-width: 49%; }
+.product-show-title { font-weight: 100; }
 .product-name {
   font-size: 1.5em;
   font-weight: 100;
   text-align: center;
-  width: 40%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .product-image-container {
   display: flex;
@@ -133,4 +131,54 @@ html, body, #root {
   display: flex;
   flex-flow: column;
   font-weight: bolder;
+}
+#price-container {
+  border-bottom: .25px solid #efefef;
+  padding-bottom: 42px;
+  font-size: 2em;
+  width: 75%;
+}
+#price-qualifier { 
+  padding-left: 2px;
+  font-size: .3em; 
+  color: grey;
+}
+#promo-container {
+  color: red;
+  font-size: .8em;
+  border-bottom: .25px solid #efefef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.promo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#quantity-field {
+  border: .5px solid #efefef;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#quantity-field > a {
+  font-size: .75em;
+}
+#quantity-button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.quantity-button {
+  position: relative;
+  background-color: #bdbdbd;
+  max-height: 20%;
+  min-width: 20%;
+  max-width: 20%;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
 }
