@@ -13,12 +13,32 @@ export default class ProductCart extends React.Component {
     this.renderQuantityField = this.renderQuantityField.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
     this.renderCartButtons = this.renderCartButtons.bind(this);
+    this.renderReturnsInfo = this.renderReturnsInfo.bind(this);
+    this.renderCartOptions = this.renderCartOptions.bind(this);
   }
 
   handleQuantityChange(num) {
     let quantity = this.state.quantity + num;
     
     this.setState({ quantity: (!quantity ? 1 : quantity )});
+  }
+
+  renderReturnsInfo() {
+    return (
+      <div id='returns-container'>
+        <div id='returns-left'>returns</div>
+        <div id='returns-right'>
+        This item must be returned within 30 days osd the ship date. See return policy for
+        details. Prices, promotions, styles an availability may vary by store and online.
+        </div>
+      </div>
+    );
+  }
+  
+  renderCartOptions() {
+    return (
+      <p>buttttt</p>
+    );
   }
 
   renderCartButtons() {
@@ -98,9 +118,8 @@ export default class ProductCart extends React.Component {
         </div>
         { this.renderQuantityField() }
         { this.renderCartButtons() }
-        <div id='cart-options-container'></div>
-
-        
+        { this.renderReturnsInfo() }
+        { this.renderCartOptions() }
       </div>
     );
   }

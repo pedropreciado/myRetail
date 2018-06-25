@@ -210,3 +210,20 @@ html, body, #root {
   opacity: .5; 
   transition: .5s;
 }
+#returns-container { 
+  display: flex; 
+  margin-top: 10px;
+  align-items: center;
+  width: 75%;
+  color: grey;
+}
+#returns-left { 
+  font-weight: 100;
+  font-size: 1.2em;
+  padding-right: 10px;
+  border-right: .5px solid #efefef;
+}
+#returns-right {
+  font-size: .6em;
+  padding-left: 10px;
+}
