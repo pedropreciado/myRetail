@@ -37,11 +37,6 @@ html, body, #root {
   padding: 10px;
   transition: .2s;
 }
-.product-index-item:hover {
-  opacity: .7;
-  cursor: pointer;
-  transition: .5s;
-}
 .product-show {
   display: flex;
   flex-flow: row;
@@ -184,11 +179,6 @@ html, body, #root {
   border-radius: 50%;
   color: white;
 }
-.quantity-button:hover { 
-  cursor: pointer;
-  opacity: .5;
-  transition: .5s;
-}
 #cart-buttons-container {
   display: flex;
   justify-content: space-around;
@@ -205,14 +195,19 @@ html, body, #root {
 }
 #add-to-cart { background-color: red }
 #pick-up { background-color: black }
-#add-to-cart:hover, #pick-up:hover { 
+#add-to-cart:hover, 
+#pick-up:hover, 
+.product-index-item:hover,
+.option-button:hover, 
+.quantity-button:hover { 
   cursor: pointer;
   opacity: .5; 
   transition: .5s;
 }
 #returns-container { 
   display: flex; 
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   align-items: center;
   width: 75%;
   color: grey;
@@ -226,4 +221,20 @@ html, body, #root {
 #returns-right {
   font-size: .6em;
   padding-left: 10px;
+}
+#cart-options-container { 
+  margin-top: 10px;
+  display: flex; 
+  justify-content: space-around;
+  align-items: baseline;
+  width: 75%;
+}
+.option-button {
+  font-size: .75em;
+  width: 30%;
+  padding: 5px;
+  background-color: #efefef;
+  border-radius: 2px;
+  text-align: center;
+  color: grey;
 }

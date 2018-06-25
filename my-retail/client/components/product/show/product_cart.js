@@ -37,7 +37,11 @@ export default class ProductCart extends React.Component {
   
   renderCartOptions() {
     return (
-      <p>buttttt</p>
+      <div id='cart-options-container'>
+        <div className='option-button'>ADD TO REGISTRY</div>
+        <div className='option-button'>ADD TO LIST</div>
+        <div className='option-button'>SHARE</div>
+      </div>
     );
   }
 
