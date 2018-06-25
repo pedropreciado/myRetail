@@ -11,6 +11,13 @@ export default class ProductCart extends React.Component {
     
     this.renderPromotions = this.renderPromotions.bind(this);
     this.renderQuantityField = this.renderQuantityField.bind(this);
+    this.handleQuantityChange = this.handleQuantityChange.bind(this);
+  }
+
+  handleQuantityChange(num) {
+    let quantity = this.state.quantity + num;
+    
+    this.setState({ quantity: (!quantity ? 1 : quantity )});
   }
 
   renderQuantityField() {
@@ -21,9 +28,15 @@ export default class ProductCart extends React.Component {
       <a>{'quantity: '}</a>
 
         <div id='quantity-button-container'>
-        <div className='quantity-button' id='minus'>-</div>
+        <div 
+        onClick={(() => this.handleQuantityChange(-1))}
+        className='quantity-button' 
+        id='minus'> - </div>
           {quantity}
-          <div className='quantity-button' id='plus'>+</div>
+        <div 
+        onClick={() => this.handleQuantityChange(1)}
+        className='quantity-button' 
+        id='plus'> + </div>
         </div>
       </div>
     );

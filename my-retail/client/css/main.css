@@ -93,6 +93,7 @@ html, body, #root {
   align-items: center;
 }
 .image-slide-arrow:hover, .slide-image:hover { 
+  background-color: #efefef;
   opacity: .5;
   cursor: pointer; 
   transition: .7s;
@@ -149,6 +150,7 @@ html, body, #root {
   border-bottom: .25px solid #efefef;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 75%;
 }
 .promo {
   margin-top: 5px;
@@ -181,4 +183,9 @@ html, body, #root {
   text-align: center;
   border-radius: 50%;
   color: white;
+}
+.quantity-button:hover { 
+  cursor: pointer;
+  opacity: .5;
+  transition: .5s;
 }
