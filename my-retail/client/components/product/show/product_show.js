@@ -1,6 +1,8 @@
 import React from 'react';
+
 import ProductImages from './product_images';
 import ProductReviews from './product_reviews';
+import ProductCart from './product_cart';
 
 export default class ProductShow extends React.Component {
   constructor(props) {
@@ -13,6 +15,31 @@ export default class ProductShow extends React.Component {
 
     this.renderImages = this.renderImages.bind(this);
     this.renderReviews = this.renderReviews.bind(this);
+    this.renderCart = this.renderCart.bind(this);
+  }
+
+  renderCart() {
+    let { 
+      Offers, 
+      Promotions, 
+      purchasingChannelCode
+    } = this.props.product;
+
+    let promotions = Promotions.map(promo => promo.Description[0].shortDescription),
+        offers = { 
+          price: Offers[0].OfferPrice[0].formattedPriceValue,
+          qualifier: Offers[0].OfferPrice[0].priceQualifier,
+        };
+
+    return (
+      <ProductCart 
+      promotions={promotions} 
+      offers={offers} 
+      code={purchasingChannelCode}
+      />
+    );
+
+
   }
 
   renderImages() { 
@@ -23,11 +50,11 @@ export default class ProductShow extends React.Component {
     return (
       <ProductImages 
       primaryImageIdx={images.length - 1}
-        images={images}
+      images={images}
       />
     );
   }
-  
+    
   renderReviews() {
     let { 
       consolidatedOverallRating,
@@ -49,23 +76,25 @@ export default class ProductShow extends React.Component {
     let { product: { title } } = this.props;
     
     return (
-      <div>
-      <div id='product-show-left'>
-        <div className='show-component product-name'>{ title }</div>
-        <div className='show-component product-images'>
-          { this.renderImages() }
+      <div className='product-show'>
+        <div className='product-show-split'>
+          <div className='show-component product-name'>{ title }</div>
+          <div className='show-component product-images'>
+            { this.renderImages() }
+          </div>
+          <div className='show-component product-reviews-container'>
+            { this.renderReviews() }
+          </div>
         </div>
-        <div className='show-component product-reviews-container'>
-          { this.renderReviews() }
-        </div>
-      </div>
 
-      <div>
-        <div className='show-component product-cart-container'>
+        <div className='product-show-split'>
+          <div className='show-component product-cart-container'>
+            {this.renderCart()}
+          </div>
+          <div className='show-component product-details-container'>
+          <a>details</a>
+          </div>
         </div>
-        <div className='show-component product-details-container'>
-        </div>
-      </div>
       </div>
     );
   }
