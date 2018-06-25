@@ -26,8 +26,8 @@ export default class extends React.Component {
   renderReviews() {
     let { reviews } = this.props; 
 
-    return reviews.map((review) => {
-      return (<ReviewBody review={review} />);
+    return reviews.map((review, idx) => {
+      return (<ReviewBody key={idx} review={review} />);
     });
   }
   

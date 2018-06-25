@@ -28,6 +28,7 @@ export default class ProductShow extends React.Component {
   }
 
   componentDidMount() {
+    this.props.fetchProducts();
     window.addEventListener('resize', this.updateWidth);
   }
   
@@ -160,11 +161,15 @@ export default class ProductShow extends React.Component {
   }
 
   render() {
+    if (!this.props.product) {
+      return (<a>Loading ...</a>);
+    }
+
     let { product: { title } } = this.props;
     let { screenWidth } = this.state;
     let mobile = screenWidth < 950 ? true : false;
 
-    
+        
     return (
       <div>
         {
