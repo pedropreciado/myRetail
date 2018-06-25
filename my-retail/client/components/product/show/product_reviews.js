@@ -1,15 +1,36 @@
 import React from 'react';
 import StarRatings from 'react-star-ratings';
 
+import ReviewBody from './product_review_body';
 import dateParser from '../../../utils/date_parser';
 
 export default class extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      showReviews: false
+    };
     
     this.renderProCon = this.renderProCon.bind(this);
+    this.renderReviews = this.renderReviews.bind(this);
+    this.handleAllReviewsClick = this.handleAllReviewsClick.bind(this);
   }
 
+  handleAllReviewsClick() {
+    let showReviews = !this.state.showReviews;
+
+    this.setState({ showReviews });
+  }
+
+  renderReviews() {
+    let { reviews } = this.props; 
+
+    return reviews.map((review) => {
+      return (<ReviewBody review={review} />);
+    });
+  }
+  
   renderProCon(reviewType) {
     let { 
       review, 
@@ -54,6 +75,7 @@ export default class extends React.Component {
 
   render() {
     let { rating, reviews } = this.props;
+    let { showReviews } = this.state;
     
     return (
       <div id='ratings-container'>
@@ -65,14 +87,25 @@ export default class extends React.Component {
           starDimension='20px' starSpacing='5px'
           /> overall
           </div>
-          <a id='all-reviews-button'>
-          { `view all ${reviews.length} reviews` }
-          </a>
+
+          <div id='all-reviews-button' onClick={this.handleAllReviewsClick}>
+          <a>{ `${showReviews ? 'hide' : 'show'} all ${reviews.length} reviews` }</a>
+          </div>
         </div>
-        <div id='pro-con-outer-container'>
-        { this.renderProCon('pro') }
-        { this.renderProCon('con') }
-        </div>
+        { 
+          showReviews
+          ? (
+            <div id='reviews-container'>
+            { this.renderReviews() }
+            </div>
+          )
+          : (
+          <div id='pro-con-outer-container'>
+            {this.renderProCon('pro')}
+            {this.renderProCon('con')}
+          </div>
+          )
+        }
       </div>
     );
   }
