@@ -12,6 +12,7 @@ export default class ProductCart extends React.Component {
     this.renderPromotions = this.renderPromotions.bind(this);
     this.renderQuantityField = this.renderQuantityField.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
+    this.renderCartButtons = this.renderCartButtons.bind(this);
   }
 
   handleQuantityChange(num) {
@@ -20,6 +21,34 @@ export default class ProductCart extends React.Component {
     this.setState({ quantity: (!quantity ? 1 : quantity )});
   }
 
+  renderCartButtons() {
+    let { code } =  this.props;
+    let buttons = [
+    (<div 
+      className='cart-button' 
+      id='add-to-cart'
+      onClick={() => alert('Added to cart!')}
+    >ADD TO CART
+    </div>),
+    (<div 
+      className='cart-button' 
+      onClick={() => alert('Searching for nearest store ...')}
+      id='pick-up'>PICK UP IN STORE</div>), 
+  ];
+
+    if (code === 1) {
+      buttons = buttons.slice(0, 1);
+    } else if (code === 2) {
+      buttons = buttons.slice(1, 2);
+    }
+    
+    return (
+      <div id='cart-buttons-container'>
+        { buttons }
+      </div>
+    );
+  }
+  
   renderQuantityField() {
     let { quantity } = this.state;
     
@@ -68,7 +97,7 @@ export default class ProductCart extends React.Component {
           { this.renderPromotions() }
         </div>
         { this.renderQuantityField() }
-        <div id='cart-buttons'></div>
+        { this.renderCartButtons() }
         <div id='cart-options-container'></div>
 
         
