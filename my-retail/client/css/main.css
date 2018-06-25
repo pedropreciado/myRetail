@@ -238,3 +238,6 @@ html, body, #root {
   text-align: center;
   color: grey;
 }
+#product-feature-container > div { padding: 10px; font-size: 2em; }
+#product-feature-container > ul { padding-left: 20px; }
+.feature-item { color: grey; font-size: .75em; margin: 5px; }

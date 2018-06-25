@@ -3,6 +3,7 @@ import React from 'react';
 import ProductImages from './product_images';
 import ProductReviews from './product_reviews';
 import ProductCart from './product_cart';
+import ProductFeatures from './product_features';
 
 export default class ProductShow extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ export default class ProductShow extends React.Component {
     this.renderImages = this.renderImages.bind(this);
     this.renderReviews = this.renderReviews.bind(this);
     this.renderCart = this.renderCart.bind(this);
+    this.renderFeatures = this.renderFeatures.bind(this);
   }
 
   renderCart() {
@@ -72,6 +74,19 @@ export default class ProductShow extends React.Component {
     );
   }
 
+  renderFeatures() {
+    let { features } = this.props.product.ItemDescription[0];
+    features = features.map((feature) => { 
+      return feature
+              .split('<strong>')
+              .join(' ')
+              .split('</strong>')
+              .join(' ');
+    });
+    
+    return (<ProductFeatures features={features} />);
+  }
+
   render() {
     let { product: { title } } = this.props;
     
@@ -91,8 +106,8 @@ export default class ProductShow extends React.Component {
           <div className='show-component product-cart-container'>
             {this.renderCart()}
           </div>
-          <div className='show-component product-details-container'>
-          <a>details</a>
+          <div className='show-component'>
+            { this.renderFeatures() }
           </div>
         </div>
       </div>
