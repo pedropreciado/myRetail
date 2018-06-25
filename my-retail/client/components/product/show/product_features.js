@@ -1,14 +1,12 @@
 import React from 'react';
 
-const ProductFeatures = (props) => {
-    let { features } = props;
-    
+const ProductFeatures = ({ features }) => {    
     return (
       <div id='product-feature-container'>
         <div>product highlights</div>
         <ul>
-            {features.map((feature) => (
-            <li className='feature-item'>{ feature }</li>
+            {features.map((feature, idx) => (
+            <li className='feature-item' key={idx} >{ feature }</li>
             ))}
         </ul>
       </div>

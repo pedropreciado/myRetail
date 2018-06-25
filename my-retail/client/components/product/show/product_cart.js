@@ -28,7 +28,7 @@ export default class ProductCart extends React.Component {
       <div id='returns-container'>
         <div id='returns-left'>returns</div>
         <div id='returns-right'>
-        This item must be returned within 30 days osd the ship date. See return policy for
+        This item must be returned within 30 days of the ship date. See return policy for
         details. Prices, promotions, styles an availability may vary by store and online.
         </div>
       </div>
@@ -49,12 +49,14 @@ export default class ProductCart extends React.Component {
     let { code } =  this.props;
     let buttons = [
     (<div 
+      key={0}
       className='cart-button' 
       id='add-to-cart'
       onClick={() => alert('Added to cart!')}
     >ADD TO CART
     </div>),
     (<div 
+      key={1}
       className='cart-button' 
       onClick={() => alert('Searching for nearest store ...')}
       id='pick-up'>PICK UP IN STORE</div>), 
