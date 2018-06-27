@@ -3,7 +3,7 @@ import * as ProductAPIUtil from '../utils/product_api_util';
 export const RECEIVE_ALL_PRODUCTS = 'RECEIVE_ALL_PRODUCTS';
 
 export const fetchProducts = () => dispatch => {
-  ProductAPIUtil
+  return ProductAPIUtil
     .fetchProducts()
     .then((res) => {
       return res.json();

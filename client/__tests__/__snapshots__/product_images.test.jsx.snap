@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImages renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductImages
+    images={
+        Array [
+            "image.jpg",
+            "image_2.jpg",
+            "image_3.jpg",
+          ]
+    }
+    primaryImageIdx={2}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="primary"
+          id="primary-image"
+          onClick={[Function]}
+          src="image_3.jpg"
+/>,
+        <a
+          id="zoom-image"
+          onClick={[Function]}
+>
+          <FaSearchPlus />
+          view larger
+</a>,
+        <ProductImageSlide
+          changeImage={[Function]}
+          currentImageIdx={2}
+          images={
+                    Array [
+                              "image.jpg",
+                              "image_2.jpg",
+                              "image_3.jpg",
+                            ]
+          }
+/>,
+        <Modal
+          ariaHideApp={false}
+          bodyOpenClassName="ReactModal__Body--open"
+          closeTimeoutMS={0}
+          contentLabel=""
+          isOpen={false}
+          onRequestClose={[Function]}
+          parentSelector={[Function]}
+          portalClassName="ReactModalPortal"
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          shouldFocusAfterRender={true}
+          shouldReturnFocusAfterClose={true}
+>
+          <img
+                    alt="product"
+                    id="in-modal"
+                    onClick={[Function]}
+                    src="image_3.jpg"
+          />
+</Modal>,
+      ],
+      "className": "product-image-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "primary",
+          "id": "primary-image",
+          "onClick": [Function],
+          "src": "image_3.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <FaSearchPlus />,
+            "view larger",
+          ],
+          "id": "zoom-image",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "view larger",
+        ],
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "changeImage": [Function],
+          "currentImageIdx": 2,
+          "images": Array [
+            "image.jpg",
+            "image_2.jpg",
+            "image_3.jpg",
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "ariaHideApp": false,
+          "bodyOpenClassName": "ReactModal__Body--open",
+          "children": <img
+            alt="product"
+            id="in-modal"
+            onClick={[Function]}
+            src="image_3.jpg"
+/>,
+          "closeTimeoutMS": 0,
+          "contentLabel": "",
+          "isOpen": false,
+          "onRequestClose": [Function],
+          "parentSelector": [Function],
+          "portalClassName": "ReactModalPortal",
+          "shouldCloseOnEsc": true,
+          "shouldCloseOnOverlayClick": true,
+          "shouldFocusAfterRender": true,
+          "shouldReturnFocusAfterClose": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "product",
+            "id": "in-modal",
+            "onClick": [Function],
+            "src": "image_3.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="primary"
+            id="primary-image"
+            onClick={[Function]}
+            src="image_3.jpg"
+/>,
+          <a
+            id="zoom-image"
+            onClick={[Function]}
+>
+            <FaSearchPlus />
+            view larger
+</a>,
+          <ProductImageSlide
+            changeImage={[Function]}
+            currentImageIdx={2}
+            images={
+                        Array [
+                                    "image.jpg",
+                                    "image_2.jpg",
+                                    "image_3.jpg",
+                                  ]
+            }
+/>,
+          <Modal
+            ariaHideApp={false}
+            bodyOpenClassName="ReactModal__Body--open"
+            closeTimeoutMS={0}
+            contentLabel=""
+            isOpen={false}
+            onRequestClose={[Function]}
+            parentSelector={[Function]}
+            portalClassName="ReactModalPortal"
+            shouldCloseOnEsc={true}
+            shouldCloseOnOverlayClick={true}
+            shouldFocusAfterRender={true}
+            shouldReturnFocusAfterClose={true}
+>
+            <img
+                        alt="product"
+                        id="in-modal"
+                        onClick={[Function]}
+                        src="image_3.jpg"
+            />
+</Modal>,
+        ],
+        "className": "product-image-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "primary",
+            "id": "primary-image",
+            "onClick": [Function],
+            "src": "image_3.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FaSearchPlus />,
+              "view larger",
+            ],
+            "id": "zoom-image",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "view larger",
+          ],
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "changeImage": [Function],
+            "currentImageIdx": 2,
+            "images": Array [
+              "image.jpg",
+              "image_2.jpg",
+              "image_3.jpg",
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "ariaHideApp": false,
+            "bodyOpenClassName": "ReactModal__Body--open",
+            "children": <img
+              alt="product"
+              id="in-modal"
+              onClick={[Function]}
+              src="image_3.jpg"
+/>,
+            "closeTimeoutMS": 0,
+            "contentLabel": "",
+            "isOpen": false,
+            "onRequestClose": [Function],
+            "parentSelector": [Function],
+            "portalClassName": "ReactModalPortal",
+            "shouldCloseOnEsc": true,
+            "shouldCloseOnOverlayClick": true,
+            "shouldFocusAfterRender": true,
+            "shouldReturnFocusAfterClose": true,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "product",
+              "id": "in-modal",
+              "onClick": [Function],
+              "src": "image_3.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

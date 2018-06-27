@@ -54,12 +54,14 @@ export default class ProductImageSlide extends React.Component {
 
         <img className='slide-image' 
         onClick={() => this.handleImageClick(leftIdx)} 
-        src={images[leftIdx]} 
+        src={images[leftIdx]} alt={'slide 1'}
         />
-        <img className='slide-image current' src={images[midIdx]} />
+        <img className='slide-image current' 
+        alt={'slide mid'} src={images[midIdx]}
+        />
         <img className='slide-image' 
         onClick={() => this.handleImageClick(rightIdx)} 
-        src={images[rightIdx]} 
+        src={images[rightIdx]} alt={'slide 2'}
         />
 
         <div 

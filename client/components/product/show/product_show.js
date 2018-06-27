@@ -38,6 +38,7 @@ export default class ProductShow extends React.Component {
 
   updateWidth() {
     let screenWidth = window.innerWidth;
+    
     this.setState({ screenWidth });
   }
 

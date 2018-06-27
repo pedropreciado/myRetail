@@ -20,6 +20,7 @@ export default class ProductImages extends React.Component {
 
   toggleModal() {
     let modalIsOpen = !this.state.modalIsOpen;
+
     this.setState({ modalIsOpen });
   }
   
@@ -28,14 +29,20 @@ export default class ProductImages extends React.Component {
   }
   
   render() {
-    let { images, itemTitle } = this.props;
+    let { images } = this.props;
     let { currentImageIdx, modalIsOpen } = this.state;
     
     return (
       <div className='product-image-container'>
-        <img onClick={this.toggleModal} id='primary-image' src={images[currentImageIdx]}/>
+        <img onClick={this.toggleModal} 
+        id='primary-image' src={images[currentImageIdx]}
+        alt={'primary'}
+        />
         
-        <a onClick={this.toggleModal} id='zoom-image'><FaSearchPlus />view larger</a>
+        <a onClick={this.toggleModal} id='zoom-image'>
+          <FaSearchPlus />
+          view larger
+        </a>
         
         <ProductImageSlide 
         images={images}
@@ -45,13 +52,13 @@ export default class ProductImages extends React.Component {
         <Modal
         isOpen={modalIsOpen}
         onRequestClose={this.toggleModal}
-        contentLabel={itemTitle}
+        contentLabel={''}
         ariaHideApp={false}
         > 
           <img 
-          onClick={this.toggleModal} 
-          id='in-modal' 
+          onClick={this.toggleModal} id='in-modal' 
           src={images[currentImageIdx]} 
+          alt={'product'}
           />
         </Modal>
       </div>
