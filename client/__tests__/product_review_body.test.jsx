@@ -23,16 +23,19 @@ describe('ProductReviewBody', () => {
   it('renders correctly', () => {
     expect(productReviewBody).toMatchSnapshot();
   });
+  
   it('shows ratings as stars', () => {
     let header = productReviewBody.find('.pro-con-body-header');
 
     expect(header.props().children[0].type).toBe(StarRating);
   });
+  
   it('shows title', () => {
     let header = productReviewBody.find('.pro-con-body-header');
     
     expect(header.props().children[1].props.children).toBe('a good review');
   });
+  
   it('shows review', () => {
     let reviewContainer = productReviewBody.find('.pro-con-review').at(0);
     

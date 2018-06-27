@@ -47,21 +47,25 @@ describe('ProductReview', () => {
   it('renders correctly', () => {
     expect(productReview).toMatchSnapshot();
   });
+  
   it('shows ratings as stars', () => {
     let starRatings = productReview.find(StarRating);
 
     expect(starRatings.exists()).toBe(true);
   });
+  
   it('renders pro header', () => {
     let proHeader = productReview.find('.pro-con-header').at(0);
 
     expect(proHeader.props().children[0]).toBe('PRO');
   });  
+  
   it('renders con header', () => {
     let conHeader = productReview.find('.pro-con-header').at(1);
 
     expect(conHeader.props().children[0]).toBe('CON');
   });
+  
   it('renders all reviews when "all reviews button" is clicked', () => {
     let allReviewsButton = productReview.find('#all-reviews-button');
     allReviewsButton.simulate('click');

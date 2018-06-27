@@ -34,18 +34,23 @@ describe('ProductShow', () => {
   it('renders correctly', () => {
     expect(shallowWrapper).toMatchSnapshot();
   });
+
   it('renders the title container', () => {
     expect(shallowWrapper.find('.product-name').exists()).toBe(true);
   });
+  
   it('renders the ProductImages component', () => {
     expect(fullWrapper.find(ProductImages).exists()).toBe(true);
   });
+  
   it('renders the ProductFeatures component', () => {
     expect(fullWrapper.find(ProductFeatures).exists()).toBe(true);
   });
+  
   it('renders the ProductReviews component', () => {
     expect(fullWrapper.find(ProductReviews).exists()).toBe(true);
   });
+  
   it('renders the ProductCart component', () => {
     expect(fullWrapper.find(ProductCart).exists()).toBe(true);
   });
