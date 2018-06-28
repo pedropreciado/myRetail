@@ -34,7 +34,6 @@ export default class ProductCart extends React.Component {
       </div>
     );
   }
-  
   renderCartOptions() {
     return (
       <div id='cart-options-container'>

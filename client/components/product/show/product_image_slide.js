@@ -15,7 +15,7 @@ export default class ProductImageSlide extends React.Component {
       leftIdx,
       midIdx,
       rightIdx,
-    };
+    }; 
 
     this.handleImageClick = this.handleImageClick.bind(this);
     this.handleArrowClick = this.handleArrowClick.bind(this);

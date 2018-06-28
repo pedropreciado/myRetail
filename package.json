@@ -59,9 +59,9 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "webpack": "webpack",
     "start": "nodemon --exec babel-node -- bin/www",
-    "build": "node scripts/build.js",
+    "build:dev": "webpack --watch --entry ./client/index.js --output ./client/bundle.js --mode=production",
+    "build": "webpack --entry ./client/index.js --output ./client/bundle.js --mode=development",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
