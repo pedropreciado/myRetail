@@ -1,0 +1,1111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCart renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductCart
+    code={2}
+    offers={
+        Object {
+            "price": "1.99",
+            "qualifier": "online only",
+          }
+    }
+    promotions={
+        Array [
+            "free",
+            "just kidding",
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          id="price-container"
+>
+          <a>
+                    1.99
+          </a>
+          <a
+                    id="price-qualifier"
+          >
+                    online only
+          </a>
+</div>,
+        <div
+          id="promo-container"
+>
+          <div
+                    className="promo"
+          >
+                    <FaTag
+                              color="red"
+                    />
+                    <a>
+                              free
+                    </a>
+          </div>
+          <div
+                    className="promo"
+          >
+                    <FaTag
+                              color="red"
+                    />
+                    <a>
+                              just kidding
+                    </a>
+          </div>
+</div>,
+        <div
+          id="quantity-field"
+>
+          <a>
+                    quantity: 
+          </a>
+          <div
+                    id="quantity-button-container"
+          >
+                    <div
+                              className="quantity-button"
+                              id="minus"
+                              onClick={[Function]}
+                    >
+                               - 
+                    </div>
+                    1
+                    <div
+                              className="quantity-button"
+                              id="plus"
+                              onClick={[Function]}
+                    >
+                               + 
+                    </div>
+          </div>
+</div>,
+        <div
+          id="cart-buttons-container"
+>
+          <div
+                    className="cart-button"
+                    id="pick-up"
+                    onClick={[Function]}
+          >
+                    PICK UP IN STORE
+          </div>
+</div>,
+        <div
+          id="returns-container"
+>
+          <div
+                    id="returns-left"
+          >
+                    returns
+          </div>
+          <div
+                    id="returns-right"
+          >
+                    This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.
+          </div>
+</div>,
+        <div
+          id="cart-options-container"
+>
+          <div
+                    className="option-button"
+          >
+                    ADD TO REGISTRY
+          </div>
+          <div
+                    className="option-button"
+          >
+                    ADD TO LIST
+          </div>
+          <div
+                    className="option-button"
+          >
+                    SHARE
+          </div>
+</div>,
+      ],
+      "id": "cart-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a>
+              1.99
+</a>,
+            <a
+              id="price-qualifier"
+>
+              online only
+</a>,
+          ],
+          "id": "price-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "1.99",
+            },
+            "ref": null,
+            "rendered": "1.99",
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "online only",
+              "id": "price-qualifier",
+            },
+            "ref": null,
+            "rendered": "online only",
+            "type": "a",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="promo"
+>
+              <FaTag
+                            color="red"
+              />
+              <a>
+                            free
+              </a>
+</div>,
+            <div
+              className="promo"
+>
+              <FaTag
+                            color="red"
+              />
+              <a>
+                            just kidding
+              </a>
+</div>,
+          ],
+          "id": "promo-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FaTag
+                  color="red"
+/>,
+                <a>
+                  free
+</a>,
+              ],
+              "className": "promo",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "red",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "free",
+                },
+                "ref": null,
+                "rendered": "free",
+                "type": "a",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FaTag
+                  color="red"
+/>,
+                <a>
+                  just kidding
+</a>,
+              ],
+              "className": "promo",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "red",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "just kidding",
+                },
+                "ref": null,
+                "rendered": "just kidding",
+                "type": "a",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a>
+              quantity: 
+</a>,
+            <div
+              id="quantity-button-container"
+>
+              <div
+                            className="quantity-button"
+                            id="minus"
+                            onClick={[Function]}
+              >
+                             - 
+              </div>
+              1
+              <div
+                            className="quantity-button"
+                            id="plus"
+                            onClick={[Function]}
+              >
+                             + 
+              </div>
+</div>,
+          ],
+          "id": "quantity-field",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "quantity: ",
+            },
+            "ref": null,
+            "rendered": "quantity: ",
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="quantity-button"
+                  id="minus"
+                  onClick={[Function]}
+>
+                   - 
+</div>,
+                1,
+                <div
+                  className="quantity-button"
+                  id="plus"
+                  onClick={[Function]}
+>
+                   + 
+</div>,
+              ],
+              "id": "quantity-button-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " - ",
+                  "className": "quantity-button",
+                  "id": "minus",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": " - ",
+                "type": "div",
+              },
+              1,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " + ",
+                  "className": "quantity-button",
+                  "id": "plus",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": " + ",
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="cart-button"
+              id="pick-up"
+              onClick={[Function]}
+>
+              PICK UP IN STORE
+</div>,
+          ],
+          "id": "cart-buttons-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": "PICK UP IN STORE",
+              "className": "cart-button",
+              "id": "pick-up",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "PICK UP IN STORE",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              id="returns-left"
+>
+              returns
+</div>,
+            <div
+              id="returns-right"
+>
+              This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.
+</div>,
+          ],
+          "id": "returns-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "returns",
+              "id": "returns-left",
+            },
+            "ref": null,
+            "rendered": "returns",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.",
+              "id": "returns-right",
+            },
+            "ref": null,
+            "rendered": "This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="option-button"
+>
+              ADD TO REGISTRY
+</div>,
+            <div
+              className="option-button"
+>
+              ADD TO LIST
+</div>,
+            <div
+              className="option-button"
+>
+              SHARE
+</div>,
+          ],
+          "id": "cart-options-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ADD TO REGISTRY",
+              "className": "option-button",
+            },
+            "ref": null,
+            "rendered": "ADD TO REGISTRY",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ADD TO LIST",
+              "className": "option-button",
+            },
+            "ref": null,
+            "rendered": "ADD TO LIST",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SHARE",
+              "className": "option-button",
+            },
+            "ref": null,
+            "rendered": "SHARE",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            id="price-container"
+>
+            <a>
+                        1.99
+            </a>
+            <a
+                        id="price-qualifier"
+            >
+                        online only
+            </a>
+</div>,
+          <div
+            id="promo-container"
+>
+            <div
+                        className="promo"
+            >
+                        <FaTag
+                                    color="red"
+                        />
+                        <a>
+                                    free
+                        </a>
+            </div>
+            <div
+                        className="promo"
+            >
+                        <FaTag
+                                    color="red"
+                        />
+                        <a>
+                                    just kidding
+                        </a>
+            </div>
+</div>,
+          <div
+            id="quantity-field"
+>
+            <a>
+                        quantity: 
+            </a>
+            <div
+                        id="quantity-button-container"
+            >
+                        <div
+                                    className="quantity-button"
+                                    id="minus"
+                                    onClick={[Function]}
+                        >
+                                     - 
+                        </div>
+                        1
+                        <div
+                                    className="quantity-button"
+                                    id="plus"
+                                    onClick={[Function]}
+                        >
+                                     + 
+                        </div>
+            </div>
+</div>,
+          <div
+            id="cart-buttons-container"
+>
+            <div
+                        className="cart-button"
+                        id="pick-up"
+                        onClick={[Function]}
+            >
+                        PICK UP IN STORE
+            </div>
+</div>,
+          <div
+            id="returns-container"
+>
+            <div
+                        id="returns-left"
+            >
+                        returns
+            </div>
+            <div
+                        id="returns-right"
+            >
+                        This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.
+            </div>
+</div>,
+          <div
+            id="cart-options-container"
+>
+            <div
+                        className="option-button"
+            >
+                        ADD TO REGISTRY
+            </div>
+            <div
+                        className="option-button"
+            >
+                        ADD TO LIST
+            </div>
+            <div
+                        className="option-button"
+            >
+                        SHARE
+            </div>
+</div>,
+        ],
+        "id": "cart-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a>
+                1.99
+</a>,
+              <a
+                id="price-qualifier"
+>
+                online only
+</a>,
+            ],
+            "id": "price-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1.99",
+              },
+              "ref": null,
+              "rendered": "1.99",
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "online only",
+                "id": "price-qualifier",
+              },
+              "ref": null,
+              "rendered": "online only",
+              "type": "a",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="promo"
+>
+                <FaTag
+                                color="red"
+                />
+                <a>
+                                free
+                </a>
+</div>,
+              <div
+                className="promo"
+>
+                <FaTag
+                                color="red"
+                />
+                <a>
+                                just kidding
+                </a>
+</div>,
+            ],
+            "id": "promo-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FaTag
+                    color="red"
+/>,
+                  <a>
+                    free
+</a>,
+                ],
+                "className": "promo",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "red",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "free",
+                  },
+                  "ref": null,
+                  "rendered": "free",
+                  "type": "a",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FaTag
+                    color="red"
+/>,
+                  <a>
+                    just kidding
+</a>,
+                ],
+                "className": "promo",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "red",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "just kidding",
+                  },
+                  "ref": null,
+                  "rendered": "just kidding",
+                  "type": "a",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a>
+                quantity: 
+</a>,
+              <div
+                id="quantity-button-container"
+>
+                <div
+                                className="quantity-button"
+                                id="minus"
+                                onClick={[Function]}
+                >
+                                 - 
+                </div>
+                1
+                <div
+                                className="quantity-button"
+                                id="plus"
+                                onClick={[Function]}
+                >
+                                 + 
+                </div>
+</div>,
+            ],
+            "id": "quantity-field",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "quantity: ",
+              },
+              "ref": null,
+              "rendered": "quantity: ",
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="quantity-button"
+                    id="minus"
+                    onClick={[Function]}
+>
+                     - 
+</div>,
+                  1,
+                  <div
+                    className="quantity-button"
+                    id="plus"
+                    onClick={[Function]}
+>
+                     + 
+</div>,
+                ],
+                "id": "quantity-button-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " - ",
+                    "className": "quantity-button",
+                    "id": "minus",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": " - ",
+                  "type": "div",
+                },
+                1,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " + ",
+                    "className": "quantity-button",
+                    "id": "plus",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": " + ",
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="cart-button"
+                id="pick-up"
+                onClick={[Function]}
+>
+                PICK UP IN STORE
+</div>,
+            ],
+            "id": "cart-buttons-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": "PICK UP IN STORE",
+                "className": "cart-button",
+                "id": "pick-up",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "PICK UP IN STORE",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                id="returns-left"
+>
+                returns
+</div>,
+              <div
+                id="returns-right"
+>
+                This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.
+</div>,
+            ],
+            "id": "returns-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "returns",
+                "id": "returns-left",
+              },
+              "ref": null,
+              "rendered": "returns",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.",
+                "id": "returns-right",
+              },
+              "ref": null,
+              "rendered": "This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles an availability may vary by store and online.",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="option-button"
+>
+                ADD TO REGISTRY
+</div>,
+              <div
+                className="option-button"
+>
+                ADD TO LIST
+</div>,
+              <div
+                className="option-button"
+>
+                SHARE
+</div>,
+            ],
+            "id": "cart-options-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ADD TO REGISTRY",
+                "className": "option-button",
+              },
+              "ref": null,
+              "rendered": "ADD TO REGISTRY",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ADD TO LIST",
+                "className": "option-button",
+              },
+              "ref": null,
+              "rendered": "ADD TO LIST",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SHARE",
+                "className": "option-button",
+              },
+              "ref": null,
+              "rendered": "SHARE",
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

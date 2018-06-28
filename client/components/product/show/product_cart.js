@@ -48,18 +48,17 @@ export default class ProductCart extends React.Component {
   renderCartButtons() {
     let { code } =  this.props;
     let buttons = [
-    (<div 
-      key={0}
+    (<div key={0} id='add-to-cart'
       className='cart-button' 
-      id='add-to-cart'
-      onClick={() => alert('Added to cart!')}
-    >ADD TO CART
+      onClick={() => alert('Added to cart!')}>
+    ADD TO CART
     </div>),
-    (<div 
-      key={1}
+    (<div key={1} id='pick-up'
       className='cart-button' 
-      onClick={() => alert('Searching for nearest store ...')}
-      id='pick-up'>PICK UP IN STORE</div>), 
+      onClick={() => alert('Searching for nearest store ...')}>
+      PICK UP IN STORE
+      </div>
+    ), 
   ];
 
     if (code === 1) {
