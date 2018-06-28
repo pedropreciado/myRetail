@@ -1,6 +1,7 @@
 import React from 'react';
 import realMod from '../../../utils/mod';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/lib/fa';
+import { toUnicode } from 'punycode';
 
 export default class ProductImageSlide extends React.Component {
   constructor(props) {
@@ -33,9 +34,9 @@ export default class ProductImageSlide extends React.Component {
   handleArrowClick(direction) {
     let shift = (shiftIdx) => {
       let midIdx = (this.state.midIdx + shiftIdx) % this.props.images.length;
-
-      this.handleImageClick(midIdx);
-    };
+      // TODO: create clearer name for handleImageClick.
+      this.handleImageClick(midIdx); // reuse handleImageClick to set main photo, and change 
+    };                               // thsi components state; 
 
     shift(direction === 'left' ? -1 : 1);
   }
