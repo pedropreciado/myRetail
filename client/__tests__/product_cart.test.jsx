@@ -16,7 +16,7 @@ let promotions = ['free', 'just kidding'];
 describe('ProductCart', () => {
   let productCart = shallow(
     <ProductCart promotions={promotions}
-    offers={offers} code={2} 
+    offers={offers} code={0} 
     />
   );
   let priceContainer = productCart.find('#price-container');
@@ -55,5 +55,46 @@ describe('ProductCart', () => {
     expect(productCart.state('quantity')).toBe(1);
   });
 
+  it('displays both buttons when code is 0', () => {
+    let buttonsContainer = productCart.find('#cart-buttons-container');
+    
+    expect(buttonsContainer.props().children.length).toBe(2);
+  });
   
+  it('displays only "ADD TO CART" button when code is 1', () => {
+    let withCodeOne = shallow(
+      <ProductCart promotions={promotions}
+        offers={offers} code={1}
+      />);
+    let addToCart = withCodeOne.find('#add-to-cart');
+    let pickUp = withCodeOne.find('#pick-up');
+      
+    expect(addToCart.exists()).toBe(true);
+    expect(pickUp.exists()).toBe(false);
+  });
+
+  it('displays only "PICK UP ..." buttons when code is 2', () => {
+    let withCodeTwo = shallow(
+      <ProductCart promotions={promotions}
+        offers={offers} code={2}
+      />);
+    let addToCart = withCodeTwo.find('#add-to-cart');
+    let pickUp = withCodeTwo.find('#pick-up');
+
+    expect(addToCart.exists()).toBe(false);
+    expect(pickUp.exists()).toBe(true);
+  });
+
+  it('displays return information', () => {
+    let returnsContainer = productCart.find('#returns-container');
+    let text = returnsContainer.props().children[1];
+    
+    expect(typeof text.props.children).toBe('string');
+  });
+  
+  it('displays cart options', () => {
+    let cartOptionsContainer = productCart.find('#cart-options-container');
+
+    expect(cartOptionsContainer.props(0).children.length).toBe(3);
+  });
 });

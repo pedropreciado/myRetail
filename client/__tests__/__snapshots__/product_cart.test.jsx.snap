@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProductCart
-    code={2}
+    code={0}
     offers={
         Object {
             "price": "1.99",
@@ -97,6 +97,13 @@ ShallowWrapper {
         <div
           id="cart-buttons-container"
 >
+          <div
+                    className="cart-button"
+                    id="add-to-cart"
+                    onClick={[Function]}
+          >
+                    ADD TO CART
+          </div>
           <div
                     className="cart-button"
                     id="pick-up"
@@ -419,6 +426,13 @@ ShallowWrapper {
           "children": Array [
             <div
               className="cart-button"
+              id="add-to-cart"
+              onClick={[Function]}
+>
+              ADD TO CART
+</div>,
+            <div
+              className="cart-button"
               id="pick-up"
               onClick={[Function]}
 >
@@ -429,6 +443,20 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": "ADD TO CART",
+              "className": "cart-button",
+              "id": "add-to-cart",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "ADD TO CART",
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": "1",
@@ -634,6 +662,13 @@ ShallowWrapper {
           <div
             id="cart-buttons-container"
 >
+            <div
+                        className="cart-button"
+                        id="add-to-cart"
+                        onClick={[Function]}
+            >
+                        ADD TO CART
+            </div>
             <div
                         className="cart-button"
                         id="pick-up"
@@ -956,6 +991,13 @@ ShallowWrapper {
             "children": Array [
               <div
                 className="cart-button"
+                id="add-to-cart"
+                onClick={[Function]}
+>
+                ADD TO CART
+</div>,
+              <div
+                className="cart-button"
                 id="pick-up"
                 onClick={[Function]}
 >
@@ -966,6 +1008,20 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": "ADD TO CART",
+                "className": "cart-button",
+                "id": "add-to-cart",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "ADD TO CART",
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": "1",
